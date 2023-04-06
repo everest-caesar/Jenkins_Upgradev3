@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    options {
+        copyArtifactPermission('Deply application to staging environment');
+    }
     tools { 
         maven 'Localmaven' 
         jdk 'LocaljDK17' 
